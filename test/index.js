@@ -25,6 +25,13 @@ const runTestcases = func => {
     assert.equal(actual, 1);
   });
 
+  // emoji version 11, released on 2018-06-05
+  // https://emojipedia.org/emoji-11.0/
+  it('should return 1 for emoji 🥵', () => {
+    const actual = func("🥵");
+    assert.equal(actual, 1);
+  });
+
   it('should return 3 for 。。。', () => {
     const actual = func("。。。");
     assert.equal(actual, 3);
