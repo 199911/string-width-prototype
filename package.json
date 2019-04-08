@@ -1,0 +1,15 @@
+{
+  "name": "string-width-prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@sunday:199911/string-width-prototype.git",
+  "author": "KU Lok Sun <sundaykuloksun@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.1"
+  }
+}
