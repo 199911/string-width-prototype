@@ -2,6 +2,7 @@ const { assert } = require('chai');
 
 const check0x7f = require('../check0x7f.js');
 const checkFullWidthCodePoint = require('../checkFullWidthCodePoint.js');
+const checkStringWidth = require('../checkStringWidth.js');
 
 const runTestcases = func => {
   it('should return 3 for 易樂𠒇', () => {
@@ -46,4 +47,8 @@ describe('check0x7f', () => {
 
 describe('checkFullWidthCodePoint', () => {
   runTestcases(checkFullWidthCodePoint);
+});
+
+describe('checkStringWidth', () => {
+  runTestcases(checkStringWidth);
 });
