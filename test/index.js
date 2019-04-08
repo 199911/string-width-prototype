@@ -39,6 +39,11 @@ const runTestcases = func => {
     const actual = func("｡");
     assert.equal(actual, 0.5);
   });
+
+  it('should reutrn 5.5 for ASFKL:#EO#$', () => {
+    const actual = func("ASFKL:#EO#$");
+    assert.equal(actual, 5.5);
+  });
 };
 
 describe('check0x7f', () => {
